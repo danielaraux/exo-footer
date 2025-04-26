@@ -4,12 +4,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Pour aligner et centrer le titre */
+/* Pour aligner et positionner le titre principal */
 h1 {
     text-align: center;
     margin: 20%;
 }
-
 
 
 /* couleur sur le content du footer et un nowrap pour que les éléments restent en place (qui ne sert qu'a contenir les éléments enfants)*/
@@ -19,7 +18,7 @@ h1 {
 }
 
 
-/* disposition en ligne block et marge de 50px sur les ID des enfants de footer-content */
+/* disposition en inline block, largeur de 32% de l'écran, alignement vertical top et marge de 20px sur les ID des enfants de footer-content */
 #map,
 #contact,
 #horaires {
@@ -30,7 +29,7 @@ h1 {
 }
 
 
-/* modification de la taille du iframe google maps */
+/* modification de la taille du iframe google maps et marge à gauche */
 #map iframe {
     width: 450px;
     height: 300px;
@@ -59,22 +58,21 @@ h3,
     margin: 10px;
 }
 
-/* pour dire que le contenu sera en block inline */
+/* pour dire que le contenu sera en block inline pour la partie horaires */
 #horaires {
     display: inline-block;
 }
 
-/* pour aligner le h3 en centré et l'espacer */
+/* pour aligner le h3 en centré */
 #horaires h3 {
     text-align: center;
 }
 
-
+/* pour mettre en inline block les jours et les espacer des heures avec le width */
 .jour {
     display: inline-block;
     width: 120px;
 }
-
 
 
 /* pour centrer la section des mentions legales */
