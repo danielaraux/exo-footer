@@ -1,45 +1,83 @@
+/* Pour enlever les marges et mettre la typo Verdana partout */
 * {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Pour aligner et centrer le titre */
 h1 {
     text-align: center;
     margin: 20%;
 }
 
-footer {
+
+
+/* couleur sur le content du footer et un nowrap pour que les éléments restent en place (qui ne sert qu'a contenir les éléments enfants)*/
+.footer-content {
     background-color: lightgrey;
+    white-space: nowrap;
 }
 
-.img-map img {
-    width: 500px;
-    height: 350px;
+
+/* disposition en ligne block et marge de 50px sur les ID des enfants de footer-content */
+#map,
+#contact,
+#horaires {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    margin-top: 20px;
+}
+
+
+/* modification de la taille du iframe google maps */
+#map iframe {
+    width: 450px;
+    height: 300px;
+    margin-left: 70px;
+
+}
+
+/* pour centrer tout le contenu de la section contact */
+#contact {
+    text-align: center;
+}
+
+
+/* pour mettre en place une marge entre les titres de la section contact sans toucher à l'adresse */
+#contact,
+h3,
+.tel {
+    margin: 20px;
+}
+
+
+/* pour redimensionner les images de la section contact et les espacer */
+#contact img {
+    width: 30px;
+    height: 30px;
     margin: 10px;
-    border: 1px solid black;
 }
 
-.logos img {
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
+/* pour dire que le contenu sera en block inline */
+#horaires {
+    display: inline-block;
 }
 
-.titres {
+/* pour aligner le h3 en centré et l'espacer */
+#horaires h3 {
     text-align: center;
-    border: 1px solid black;
-    margin: 0 auto;
-    width: 500px;
 }
 
-.horaires {
-    text-align: center;
-    border: 1px solid black;
-    margin: 0 auto;
-    width: 300px;
+
+.jour {
+    display: inline-block;
+    width: 120px;
 }
 
-.legals {
+
+
+/* pour centrer la section des mentions legales */
+#mentionslegales {
     text-align: center;
-    border: 1px solid black;
 }
