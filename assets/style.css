@@ -1,0 +1,81 @@
+/* Pour enlever les marges et mettre la typo Verdana partout */
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Pour aligner et positionner le titre principal */
+h1 {
+    text-align: center;
+    margin: 20%;
+}
+
+
+/* couleur sur le content du footer et un nowrap pour que les éléments restent en place (qui ne sert qu'a contenir les éléments enfants)*/
+.footer-content {
+    background-color: lightgrey;
+    white-space: nowrap;
+}
+
+
+/* disposition en inline block, largeur de 32% de l'écran, alignement vertical top et marge de 20px sur les ID des enfants de footer-content */
+#map,
+#contact,
+#horaires {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    margin-top: 20px;
+}
+
+
+/* modification de la taille du iframe google maps et marge à gauche */
+#map iframe {
+    width: 450px;
+    height: 300px;
+    margin-left: 70px;
+
+}
+
+/* pour centrer tout le contenu de la section contact */
+#contact {
+    text-align: center;
+}
+
+
+/* pour mettre en place une marge entre les titres de la section contact sans toucher à l'adresse */
+#contact,
+h3,
+.tel {
+    margin: 20px;
+}
+
+
+/* pour redimensionner les images de la section contact et les espacer */
+#contact img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+/* pour dire que le contenu sera en block inline pour la partie horaires */
+#horaires {
+    display: inline-block;
+}
+
+/* pour aligner le h3 en centré */
+#horaires h3 {
+    text-align: center;
+}
+
+/* pour mettre en inline block les jours et les espacer des heures avec le width */
+.jour {
+    display: inline-block;
+    width: 120px;
+}
+
+
+/* pour centrer la section des mentions legales */
+#mentionslegales {
+    text-align: center;
+}
