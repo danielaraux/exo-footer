@@ -79,3 +79,9 @@ h3,
 #mentionslegales {
     text-align: center;
 }
+
+/* pour centrer les horaires par rapport au titre */
+.centrage-horaires {
+    margin: 0 auto;
+    width: 61%;
+}
