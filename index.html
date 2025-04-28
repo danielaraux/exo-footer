@@ -11,68 +11,85 @@
 <body>
 
     <main>
+
+
         <h1>This OUR "footer" Bro !</h1>
 
-
-        <footer>
-
-            <div class="footer-content">
-
-
-                <!-- Intégration d'une carte google maps pour la localisation de l'adresse -->
-                <div id="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41446.181419368855!2d0.1435428!3d49.5149816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02fe47506eabf%3A0x7a9291e4b0b159ee!2s3%20Rue%20Maximilien%20Robespierre%2C%2076610%20Le%20Havre!5e0!3m2!1sfr!2sfr!4v1745573088291!5m2!1sfr!2sfr"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <!-- La div contact avec les logos des réseaux -->
-                <div id="contact">
-                    <h3>Nos coordonnées</h3>
-                    <h3>Les Goélands</h3>
-                    <p>3 Rue Maximilien Robespierre</p>
-                    <p>76610 LE HAVRE</p>
-                    <p class="tel"><b>Tél</b>: 02.35.34.33.32</p>
-                    <div class="socials">
-                        <img src="img/logo-instagram.png" alt="logo-instagram">
-                        <img src="img/logo-twitter.png" alt="logo-twitter">
-                        <img src="img/logo-facebook.png" alt="logo-facebook">
-                    </div>
-                </div>
-
-                <!-- La div horaires -->
-                <!-- Créee par colonnes, ligne vide pour revenir a la ligne grace a la div -->
-                <!-- jour en span pour qu'il reste sur la même ligne, heure également -->
-                <div id="horaires">
-                    <h3>Nos horaires</h3>
-                    <div class="centrage-horaires">
-                        <div class="ligne"><span class="jour"><b>Lundi</b></span><span class="heure">9h00 - 12h00 /
-                                13h00 - 17h00</span></div>
-                        <div class="ligne"><span class="jour"><b>Mardi</b></span><span class="heure">8h30 - 12h00 /
-                                13h00 - 17h30</span></div>
-                        <div class="ligne"><span class="jour"><b>Mercredi</b></span><span class="heure">8h30 - 12h00 /
-                                13h00 - 17h30</span></div>
-                        <div class="ligne"><span class="jour"><b>Jeudi</b></span><span class="heure">8h30 - 12h00 /
-                                13h00 - 17h30</span></div>
-                        <div class="ligne"><span class="jour"><b>Vendredi</b></span><span class="heure">8h00 -
-                                12h00</span></div>
-                        <div class="ligne"><span class="jour"><b>Samedi</b></span><span class="heure">Fermé</span>
-                        </div>
-                        <div class="ligne"><span class="jour"><b>Dimanche</b></span><span class="heure">Fermé</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- class pour centrer les mentions légales -->
-                <p id="mentionslegales">CGU - Mentions légales - Team Afpa 2025</p>
-
-            </div>
-        </footer>
-
-
     </main>
+
+    <footer>
+
+
+
+
+        <!-- Intégration d'une carte google maps pour la localisation de l'adresse -->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41446.181419368855!2d0.1435428!3d49.5149816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02fe47506eabf%3A0x7a9291e4b0b159ee!2s3%20Rue%20Maximilien%20Robespierre%2C%2076610%20Le%20Havre!5e0!3m2!1sfr!2sfr!4v1745573088291!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- La div contact avec les logos des réseaux -->
+        <div class="contact">
+            <h3>Nos coordonnées</h3>
+            <h3>Les Goélands</h3>
+            <p>3 Rue Maximilien Robespierre</p>
+            <p>76610 LE HAVRE</p>
+            <p class="tel"><b>Tél</b>: 02.35.34.33.32</p>
+            <div class="socials">
+                <img src="img/logo-instagram.png" alt="logo-instagram">
+                <img src="img/logo-twitter.png" alt="logo-twitter">
+                <img src="img/logo-facebook.png" alt="logo-facebook">
+            </div>
+        </div>
+
+        <!-- La div horaires -->
+        <div class="horaires">
+            <h3>Nos horaires</h3>
+
+            <table>
+                <tr>
+                    <th>Lundi</th>
+
+                    <td>9h00 - 12h00 / 13h00 - 17h00</td>
+                </tr>
+                <tr>
+                    <th>Mardi</th>
+
+                    <td>8h30 - 12h00 / 13h00 - 17h30</td>
+                </tr>
+                <tr>
+                    <th>Mercredi</th>
+                    <td>8h30 - 12h00 / 13h00 - 17h30</td>
+                </tr>
+                <tr>
+                    <th>Jeudi</th>
+                    <td>8h30 - 12h00 / 13h00 - 17h30</td>
+                </tr>
+                <tr>
+                    <th>Vendredi</th>
+                    <td>8h00 - 12h00</td>
+                </tr>
+                <tr>
+                    <th>Samedi</th>
+                    <td>Fermé</td>
+                </tr>
+                <tr>
+                    <th>Dimanche</th>
+                    <td>Fermé</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+        <!-- class pour centrer les mentions légales -->
+        <p class="mentionslegales">CGU - Mentions légales - Team Afpa 2025</p>
+
+
+    </footer>
 
 
 </body>
